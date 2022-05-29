@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Board from './board/borard';
 
 function App() {
+  const [winnerMessage,setWinnerMessage]=useState('')
+  const getWinner=(winner)=>{
+    if(winner){
+      setWinnerMessage(`The winner is :  ${winner}`)
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='game'>
+      <div className='game-board'>
+          <Board getWinner={getWinner} />
+      </div>
+      <div className='game-winner'>
+        <div className='call_winner'>{winnerMessage}</div>
+      </div>
     </div>
+    </>
   );
 }
 

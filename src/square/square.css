@@ -1,0 +1,25 @@
+.square {
+    background: rgb(206, 231, 228);
+    border: 3px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 75px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 75px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  .status{
+    margin-left: -40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(87, 87, 229);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
