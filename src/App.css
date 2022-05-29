@@ -1,6 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .game {
   display: flex;
   flex-direction: row;
+  background-color: rgb(146, 141, 141);
+  height: 90vh;
+  padding-top: 9%;
 }
 
 .game-info {
@@ -9,7 +18,7 @@
 
 .call_winner{
   position: absolute;
-  color: rgb(68, 193, 46);
+  color: rgb(5, 1, 1);
   font-family: fantasy;
   font-size: 25px;
 }
