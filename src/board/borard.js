@@ -59,7 +59,7 @@ function Board(props){
         console.log(square);
         }
         else{
-            alert("cannot update the filled block")
+            alert("Already Clicked")
         }
     }
     const renderSquare=(i)=>{
