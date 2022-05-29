@@ -59,7 +59,7 @@ function Board(props){
         console.log(square);
         }
         else{
-            alert("Already Clicked")
+            alert("Already Clicked!!!")
         }
     }
     const renderSquare=(i)=>{
